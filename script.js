@@ -1,6 +1,6 @@
 // Initialize variables
 let assisName = "Haris varma A I";
-let bossName = "Antony samuvel and Sam nivesh";
+let bossName = "Antony samuvel and Kabilesh";
 
 // Function to respond to user input
 function respond(text) {
