@@ -1,16 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Speech Recognition Interface</title>
+  <title>Chatbot</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    #chat-log {
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      width: 400px;
+      height: 300px;
+      overflow-y: scroll;
+    }
+    #user-input {
+      padding: 10px;
+      width: 400px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Speech Recognition Interface</h1>
-  <form>
-    <input type="text" id="input-field" placeholder="Type or speak something...">
-    <button id="submit-btn">Submit</button>
-    <button id="mic-btn">🎤</button>
-  </form>
-  <div id="output-field"></div>
+  <h1>Chatbot</h1>
+  <div id="chat-log"></div>
+  <input id="user-input" type="text" placeholder="Type a message...">
+  <button id="send-btn">Send</button>
 
   <script src="script.js"></script>
 </body>
