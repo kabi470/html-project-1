@@ -1,6 +1,6 @@
 # html-project-1
 <<<<<<< HEAD
-AI
+
 =======
 AI kabilesh
 
