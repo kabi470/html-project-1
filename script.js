@@ -44,17 +44,17 @@ function respond(text) {
     return "Honourable m k stalin is our chief minister";
   } else if (text.includes("your opinion about harish varma")) {
     return "Right Place for Good education";
-  } else if (text === 'play our school intro') {
+  } else if (text.includes('play our school intro')) {
   window.open('https://youtu.be/nnEcvaHa7i4?si=QRpbz3c2tfMM6g-I', '_blank');
-} else if (text === 'play previous Guru Utsav competition') {
+} else if (text.includes('play previous Guru Utsav competition')) {
   window.open('https://youtu.be/pXzcTkwaWt0?si=fYk4uReJO5y0orDo', '_blank');
-} else if (text === 'play intro video') {
+} else if (text.includes('play intro video')) {
   window.open('https://youtu.be/7sBUUQNz2yE?si=idgp-IioA0RVqPFy', '_blank');
-} else if (text === 'play a song') {
+} else if (text.includes('play a song')) {
   window.open('https://youtu.be/CCJctjIO5kU?si=O-pBP5dI9Hx7Z7go', '_blank');
-} else if (text === 'play rhymes') {
+} else if (text.includes('play rhymes')) {
   window.open('https://youtu.be/QNYB7Tsb880?si=P-_xIT_uZuaeGae5', '_blank');
-} else if (text === 'play our opinion about event') {
+} else if (text.includes('play our opinion about event')) {
   window.open('https://youtube.com/shorts/RkQ3wGwOzm8?si=AYbT0IHA8DTUWpCQ', '_blank');
 } else {
     return "I didn't understand that. Can you please rephrase?";
