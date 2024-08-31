@@ -4,7 +4,7 @@ let bossName = "Antony samuvel and Kabilesh";
 
 // Function to respond to user input
 function respond(text) {
-  if (text.includes('hi bro')) {
+if (text.includes('hi bro')) {
     return "HI Sir or Mam !";
   } else if (text.includes("who is created you")) {
     return "Antony samuvel and sam nivesh was created me";
@@ -59,18 +59,20 @@ function respond(text) {
 } else {
     return "I didn't understand that. Can you please rephrase?";
   }
+  // ... (rest of your respond function remains the same)
 }
 
 // Function to get a joke
 function getJoke() {
-  // You can use a joke API or a local joke database here
-  return "Here's a joke: ...";
+  // ... (your joke function remains the same)
 }
 
-// Log a message in the chat log
-function logMessage(message) {
-  const messageElement = document.createElement('div');
+// Function to log a message
+function logMessage(message, className) {
+  const messageElement = document.createElement('p');
+  messageElement.className = className;
   messageElement.textContent = message;
+  const chatLog = document.getElementById('chat-log');
   chatLog.appendChild(messageElement);
   chatLog.scrollTop = chatLog.scrollHeight;
 }
@@ -78,8 +80,8 @@ function logMessage(message) {
 // Call the respond function and log the response
 function respondAndLog(text) {
   const response = respond(text);
-  logMessage(`You: ${text}`);
-  logMessage(`Bot: ${response}`);
+  logMessage(text, 'message user_message');
+  logMessage(response, 'message');
 }
 
 // Get the chat log, user input, and send button elements
@@ -88,10 +90,12 @@ const userInput = document.getElementById('user-input');
 const sendBtn = document.getElementById('send-btn');
 
 // Add an event listener to the send button
-sendBtn.addEventListener('click', () => {
+sendBtn.addEventListener('click', (e) => {
+  e.preventDefault();
   const userInputText = userInput.value.trim();
   if (userInputText !== '') {
     respondAndLog(userInputText);
     userInput.value = '';
+    chatLog.scrollTop = chatLog.scrollHeight;
   }
 });
