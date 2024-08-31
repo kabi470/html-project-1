@@ -40,7 +40,7 @@ if (text.includes('hi bro')) {
     return "no pls";
   } else if (text.includes('In what galaxy our solar system located?')) {
     return 'milky way';
-  } else if (text.includes('who is cheif minister of tamil nadu')) {
+  } else if (text.includes('who is chief minister of tamil nadu')) {
     return "Honourable m k stalin is our chief minister";
   } else if (text.includes("your opinion about school")) {
     return "Right Place for Good education";
