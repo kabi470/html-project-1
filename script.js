@@ -1,13 +1,13 @@
 // Initialize variables
-let assisName = "Haris varma A I";
-let bossName = "Antony samuvel and Kabilesh";
+let assisName = "Kabilesh A I";
+let bossName = "Kabilesh";
 
 // Function to respond to user input
 function respond(text) {
 if (text.includes('hi bro')) {
     return "HI Sir or Mam !";
   } else if (text.includes("who is created you")) {
-    return "Antony samuvel and sam nivesh was created me";
+    return "Kabilesh was created me";
   } else if (text.includes("who are you") || text.includes('what is your name')) {
     return `My name is ${assisName}`;
   } else if (text.includes("good morning")) {
@@ -19,7 +19,7 @@ if (text.includes('hi bro')) {
   } else if (text.includes('who are you')) {
     return `My name is ${assisName}! i was created by ${bossName}`;
   } else if (text.includes('where I am studying')) {
-    return "you are currently studying in haris varma matric higher secondary school ";
+    return "higher secondary school ";
   } else if (text.includes('who is founder of psi college')) {
     return "S. Pandian is founder of college";
   } else if (text.includes('thank you')) {
@@ -35,14 +35,14 @@ if (text.includes('hi bro')) {
     window.open('https://www.psyec.edu.in', '_blank');
     return "";
   } else if (text.includes('who is our principal')) {
-    return "our principal is mrs.dr.sowmiya mam";
+    return "you on a life principal";
   } else if (text.includes('where is our school located')) {
-    return "our school is located at ariyanendal paramakudi";
+    return "no pls";
   } else if (text.includes('In what galaxy our solar system located?')) {
     return 'milky way';
   } else if (text.includes('who is cheif minister of tamil nadu')) {
     return "Honourable m k stalin is our chief minister";
-  } else if (text.includes("your opinion about harish varma")) {
+  } else if (text.includes("your opinion about school")) {
     return "Right Place for Good education";
   } else if (text.includes('play our school intro')) {
   window.open('https://youtu.be/nnEcvaHa7i4?si=QRpbz3c2tfMM6g-I', '_blank');
