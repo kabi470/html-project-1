@@ -7,7 +7,7 @@ function respond(text) {
 if (text.includes('hi bro')) {
     return "HI Sir or Mam !";
   } else if (text.includes("who is created you")) {
-    return "Kabilesh was created me";
+    return "Kabilesh and friends🫂was created me";
   } else if (text.includes("who are you") || text.includes('what is your name')) {
     return `My name is ${assisName}`;
   } else if (text.includes("good morning")) {
